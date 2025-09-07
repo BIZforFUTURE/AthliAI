@@ -4,16 +4,12 @@
   },
   "build": {
     "ios": {
-      "node": "18.20.4",
+      "node": "20.18.1",
       "yarn": "1.22.19",
       "distribution": "internal"
     },
     "production": {
-      "ios": {
-        "node": "18.20.4",
-        "yarn": "1.22.19",
-        "distribution": "store"
-      }
+      "ios": {}
     }
   }
 }
