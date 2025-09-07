@@ -1,0 +1,15 @@
+{
+  "cli": {
+    "version": ">= 3.16.0"
+  },
+  "build": {
+    "ios": {
+      "node": "18.20.4",
+      "yarn": "1.22.19",
+      "distribution": "internal"
+    },
+    "development": {},
+    "preview": {},
+    "production": {}
+  }
+}
