@@ -1,0 +1,91 @@
+{
+  "expo": {
+    "name": "AthliAI",
+    "slug": "athliai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "athli",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "requireFullScreen": true,
+      "bundleIdentifier": "app.rork.athliai-fitness-app",
+      "buildNumber": "2",
+      "jsEngine": "jsc",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "AthliAI uses your location to track runs, walks, and outdoor workouts.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "AthliAI needs background location access to track workouts even when your screen is off.",
+        "NSPhotoLibraryUsageDescription": "AthliAI uses your photo library so you can upload progress photos.",
+        "NSCameraUsageDescription": "AthliAI uses your camera to let you capture progress photos directly in the app.",
+        "NSMicrophoneUsageDescription": "AthliAI may use your microphone to record voice notes during workouts.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ],
+        "NSLocationAlwaysUsageDescription": "Allow AthliAI to use your location.",
+        "LSRequiresIPhoneOS": true
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.rork.athliai-fitness-app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK"
+      ],
+      "versionCode": 2
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://rork.com/"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "isAndroidForegroundServiceEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true,
+          "locationAlwaysAndWhenInUsePermission": "Allow AthliAI to use your location."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "TERMS_URL": "https://athli-terms.lovable.app",
+      "PRIVACY_URL": "https://athli-terms.lovable.app",
+      "REVENUECAT_KEY": "your-ios-key"
+    }
+  }
+}
